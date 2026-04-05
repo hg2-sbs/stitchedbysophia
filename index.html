@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stitched by Sophia</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <div class="nav__links nav__links--left">
+        <a href="#blog" class="nav__link" onclick="showPage('blog')">Journal</a>
+        <a href="#portfolio" class="nav__link" onclick="showPage('portfolio')">Portfolio</a>
+      </div>
+      <div class="nav__logo" onclick="showPage('home')">
+        <span class="nav__logo-main">Stitched</span>
+        <span class="nav__logo-by">by</span>
+        <span class="nav__logo-name">Sophia</span>
+      </div>
+      <div class="nav__links nav__links--right">
+        <a href="#team" class="nav__link" onclick="showPage('team')">The Team</a>
+        <a href="#booking" class="nav__link" onclick="showPage('booking')">Book Now</a>
+      </div>
+      <button class="nav__burger" onclick="toggleMobileMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="#" onclick="showPage('home'); toggleMobileMenu()">Home</a>
+      <a href="#" onclick="showPage('blog'); toggleMobileMenu()">Journal</a>
+      <a href="#" onclick="showPage('portfolio'); toggleMobileMenu()">Portfolio</a>
+      <a href="#" onclick="showPage('team'); toggleMobileMenu()">The Team</a>
+      <a href="#" onclick="showPage('booking'); toggleMobileMenu()">Book Now</a>
+    </div>
+  </nav>
+
+  <!-- ===== TICKER ===== -->
+  <div class="ticker">
+    <div class="ticker__track">
+      <span>Fashion Advice &nbsp;✦&nbsp; Runway News &nbsp;✦&nbsp; Styling Tips &nbsp;✦&nbsp; Hemming &amp; Alterations &nbsp;✦&nbsp; Follow on Instagram @stitched_bysophia &nbsp;✦&nbsp; Fashion Advice &nbsp;✦&nbsp; Runway News &nbsp;✦&nbsp; Styling Tips &nbsp;✦&nbsp; Hemming &amp; Alterations &nbsp;✦&nbsp; Follow on Instagram @stitched_bysophia &nbsp;✦&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- ============================= -->
+  <!-- PAGE: HOME                    -->
+  <!-- ============================= -->
+  <main id="page-home" class="page page--active">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__bg">
+        <div class="hero__grain"></div>
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1800&q=80&auto=format&fit=crop" alt="Fashion editorial" class="hero__img" />
+        <div class="hero__overlay"></div>
+      </div>
+      <div class="hero__content">
+        <p class="hero__eyebrow">Est. 2024 &nbsp;·&nbsp; Washington D.C.</p>
+        <h1 class="hero__title">
+          <em>Stitched</em>
+          <span class="hero__title-by">by</span>
+          <span class="hero__title-name">Sophia</span>
+        </h1>
+        <p class="hero__sub">Where fashion meets craft — editorial musings, styling secrets,<br>runway reports &amp; bespoke alterations.</p>
+        <div class="hero__ctas">
+          <button class="btn btn--outline" onclick="showPage('blog')">Read the Journal</button>
+          <button class="btn btn--ghost" onclick="showPage('booking')">Book a Service</button>
+        </div>
+      </div>
+      <div class="hero__scroll">
+        <span>Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- INTRO STRIP -->
+    <section class="intro-strip">
+      <div class="intro-strip__inner">
+        <div class="intro-strip__text">
+          <h2 class="intro-strip__heading">A space for those who believe<br><em>getting dressed is an art form.</em></h2>
+          <p>This is my corner of the internet — part style journal, part creative portfolio, part atelier. I write about what I'm seeing on the runways, how to build a wardrobe that actually works, and the quiet magic of perfectly altered clothes. Pull up a chair.</p>
+          <button class="btn btn--dark" onclick="showPage('blog')">Start Reading →</button>
+        </div>
+        <div class="intro-strip__img-grid">
+          <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600&q=80&auto=format&fit=crop" alt="Fashion" class="intro-strip__img intro-strip__img--1"/>
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80&auto=format&fit=crop" alt="Sewing" class="intro-strip__img intro-strip__img--2"/>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED POSTS -->
+    <section class="featured-posts">
+      <div class="section-label">Latest from the Journal</div>
+      <div class="featured-posts__grid">
+
+        <article class="post-card post-card--hero" onclick="showPage('blog')">
+          <div class="post-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=900&q=80&auto=format&fit=crop" alt="Runway" />
+            <span class="post-card__tag">Runway</span>
+          </div>
+          <div class="post-card__body">
+            <p class="post-card__meta">April 2025 &nbsp;·&nbsp; Fashion Week</p>
+            <h3 class="post-card__title">The Quiet Luxury Takeover: Everything You Need to Know About This Season's Most Understated Trend</h3>
+            <p class="post-card__excerpt">Logomania is out. Considered dressing is in. Here's how the runways are redefining what it means to look expensive.</p>
+            <span class="post-card__read">Read More →</span>
+          </div>
+        </article>
+
+        <article class="post-card" onclick="showPage('blog')">
+          <div class="post-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=600&q=80&auto=format&fit=crop" alt="Styling" />
+            <span class="post-card__tag">Styling Tips</span>
+          </div>
+          <div class="post-card__body">
+            <p class="post-card__meta">March 2025</p>
+            <h3 class="post-card__title">5 Pieces Every Wardrobe Actually Needs</h3>
+            <span class="post-card__read">Read More →</span>
+          </div>
+        </article>
+
+        <article class="post-card" onclick="showPage('blog')">
+          <div class="post-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=600&q=80&auto=format&fit=crop" alt="Alterations" />
+            <span class="post-card__tag">Craft</span>
+          </div>
+          <div class="post-card__body">
+            <p class="post-card__meta">February 2025</p>
+            <h3 class="post-card__title">Why a Good Hem Changes Everything</h3>
+            <span class="post-card__read">Read More →</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SERVICES TEASER -->
+    <section class="services-teaser">
+      <div class="services-teaser__inner">
+        <div class="services-teaser__left">
+          <div class="section-label">Alterations &amp; Hemming</div>
+          <h2>The right fit<br><em>changes everything.</em></h2>
+          <p>From cropped trousers to perfectly hemmed jeans, I offer bespoke alteration services that make your clothes feel like they were made just for you.</p>
+          <button class="btn btn--dark" onclick="showPage('booking')">Book a Service</button>
+        </div>
+        <div class="services-teaser__right">
+          <div class="services-teaser__card">
+            <span class="services-teaser__num">01</span>
+            <div>
+              <h4>Trouser & Pants Hemming</h4>
+              <p>Precision hemming for all trouser styles.</p>
+            </div>
+          </div>
+          <div class="services-teaser__card">
+            <span class="services-teaser__num">02</span>
+            <div>
+              <h4>Jeans & Denim</h4>
+              <p>Raw hem, clean hem, or original stitch — your call.</p>
+            </div>
+          </div>
+          <div class="services-teaser__card">
+            <span class="services-teaser__num">03</span>
+            <div>
+              <h4>Skirts & Dresses</h4>
+              <p>From mini to maxi, we'll get the length just right.</p>
+            </div>
+          </div>
+          <div class="services-teaser__card">
+            <span class="services-teaser__num">04</span>
+            <div>
+              <h4>General Alterations</h4>
+              <p>Taking in, letting out, tapering — you name it.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INSTAGRAM STRIP -->
+    <section class="ig-strip">
+      <div class="section-label">On Instagram</div>
+      <p class="ig-strip__handle"><a href="https://www.instagram.com/stitched_bysophia/" target="_blank">@stitched_bysophia</a></p>
+      <div class="ig-strip__grid">
+        <a href="https://www.instagram.com/stitched_bysophia/" target="_blank" class="ig-strip__item">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80&auto=format&fit=crop" alt="Instagram" />
+          <div class="ig-strip__hover">View on Instagram</div>
+        </a>
+        <a href="https://www.instagram.com/stitched_bysophia/" target="_blank" class="ig-strip__item">
+          <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=400&q=80&auto=format&fit=crop" alt="Instagram" />
+          <div class="ig-strip__hover">View on Instagram</div>
+        </a>
+        <a href="https://www.instagram.com/stitched_bysophia/" target="_blank" class="ig-strip__item">
+          <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=400&q=80&auto=format&fit=crop" alt="Instagram" />
+          <div class="ig-strip__hover">View on Instagram</div>
+        </a>
+        <a href="https://www.instagram.com/stitched_bysophia/" target="_blank" class="ig-strip__item">
+          <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=400&q=80&auto=format&fit=crop" alt="Instagram" />
+          <div class="ig-strip__hover">View on Instagram</div>
+        </a>
+        <a href="https://www.instagram.com/stitched_bysophia/" target="_blank" class="ig-strip__item ig-strip__item--hidden-mobile">
+          <img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=400&q=80&auto=format&fit=crop" alt="Instagram" />
+          <div class="ig-strip__hover">View on Instagram</div>
+        </a>
+        <a href="https://www.instagram.com/stitched_bysophia/" target="_blank" class="ig-strip__item ig-strip__item--hidden-mobile">
+          <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=400&q=80&auto=format&fit=crop" alt="Instagram" />
+          <div class="ig-strip__hover">View on Instagram</div>
+        </a>
+      </div>
+      <div class="ig-strip__shop-note">
+        <p>Shop my edits &amp; full collection exclusively through Instagram. <a href="https://www.instagram.com/stitched_bysophia/" target="_blank">Visit the shop →</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================= -->
+  <!-- PAGE: BLOG / JOURNAL          -->
+  <!-- ============================= -->
+  <main id="page-blog" class="page">
+
+    <header class="page-header">
+      <div class="section-label">Est. 2024</div>
+      <h1 class="page-header__title">The Journal</h1>
+      <p class="page-header__sub">Fashion advice, runway reports, styling secrets &amp; more — straight from the atelier.</p>
+    </header>
+
+    <div class="blog-filter">
+      <button class="filter-btn filter-btn--active" onclick="filterBlog('all', this)">All</button>
+      <button class="filter-btn" onclick="filterBlog('runway', this)">Runway</button>
+      <button class="filter-btn" onclick="filterBlog('styling', this)">Styling Tips</button>
+      <button class="filter-btn" onclick="filterBlog('fashion', this)">Fashion Advice</button>
+      <button class="filter-btn" onclick="filterBlog('craft', this)">Craft</button>
+    </div>
+
+    <div class="blog-grid">
+
+      <article class="blog-card" data-cat="runway">
+        <div class="blog-card__img">
+          <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=800&q=80&auto=format&fit=crop" alt="Runway"/>
+          <span class="blog-card__tag">Runway</span>
+        </div>
+        <div class="blog-card__body">
+          <p class="blog-card__date">April 15, 2025</p>
+          <h2 class="blog-card__title">The Quiet Luxury Takeover: Everything You Need to Know About This Season</h2>
+          <p class="blog-card__excerpt">Logomania is out. Considered dressing is in. Here's how the runways are redefining what it means to look expensive — and how to bring it into your everyday wardrobe without spending a fortune.</p>
+          <a href="https://www.instagram.com/stitched_bysophia/" target="_blank" class="blog-card__cta">Read Full Post →</a>
+        </div>
+      </article>
+
+      <article class="blog-card" data-cat="styling">
+        <div class="blog-card__img">
+          <img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=800&q=80&auto=format&fit=crop" alt="Styling"/>
+          <span class="blog-card__tag">Styling Tips</span>
+        </div>
+        <div class="blog-card__body">
+          <p class="blog-card__date">March 28, 2025</p>
+          <h2 class="blog-card__title">5 Pieces Every Wardrobe Actually Needs (And 5 Trends to Skip)</h2>
+          <p class="blog-card__excerpt">After years of studying fashion and dressing real people, I've boiled it down to the essentials. Here's what's worth the investment and what's just noise.</p>
+          <a href="https://www.instagram.com/stitched_bysophia/" target="_blank" class="blog-card__cta">Read Full Post →</a>
+        </div>
+      </article>
+
+      <article class="blog-card" data-cat="craft">
+        <div class="blog-card__img">
+          <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=800&q=80&auto=format&fit=crop" alt="Craft"/>
+          <span class="blog-card__tag">Craft</span>
+        </div>
+        <div class="blog-card__body">
+          <p class="blog-card__date">March 1, 2025</p>
+          <h2 class="blog-card__title">Why a Good Hem Changes Everything — A Love Letter to Alterations</h2>
+          <p class="blog-card__excerpt">The single most transformative thing you can do for your wardrobe isn't buying something new. It's making what you already own fit perfectly.</p>
+          <a href="https://www.instagram.com/stitched_bysophia/" target="_blank" class="blog-card__cta">Read Full Post →</a>
+        </div>
+      </article>
+
+      <article class="blog-card" data-cat="fashion">
+        <div class="blog-card__img">
+          <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&q=80&auto=format&fit=crop" alt="Fashion"/>
+          <span class="blog-card__tag">Fashion Advice</span>
+        </div>
+        <div class="blog-card__body">
+          <p class="blog-card__date">February 14, 2025</p>
+          <h2 class="blog-card__title">How to Build a Capsule Wardrobe You'll Actually Wear</h2>
+          <p class="blog-card__excerpt">Forget the 33-item challenge. Here's a real, wearable approach to capsule dressing that suits your actual life — not a Pinterest fantasy.</p>
+          <a href="https://www.instagram.com/stitched_bysophia/" target="_blank" class="blog-card__cta">Read Full Post →</a>
+        </div>
+      </article>
+
+      <article class="blog-card" data-cat="runway">
+        <div class="blog-card__img">
+          <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=800&q=80&auto=format&fit=crop" alt="Runway"/>
+          <span class="blog-card__tag">Runway</span>
+        </div>
+        <div class="blog-card__body">
+          <p class="blog-card__date">January 30, 2025</p>
+          <h2 class="blog-card__title">Paris Fashion Week Highlights: The Looks I Can't Stop Thinking About</h2>
+          <p class="blog-card__excerpt">From Valentino's ethereal tulle to Celine's impeccable tailoring — a curated edit of the moments that made this season so special.</p>
+          <a href="https://www.instagram.com/stitched_bysophia/" target="_blank" class="blog-card__cta">Read Full Post →</a>
+        </div>
+      </article>
+
+      <article class="blog-card" data-cat="styling">
+        <div class="blog-card__img">
+          <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=800&q=80&auto=format&fit=crop" alt="Color"/>
+          <span class="blog-card__tag">Styling Tips</span>
+        </div>
+        <div class="blog-card__body">
+          <p class="blog-card__date">January 10, 2025</p>
+          <h2 class="blog-card__title">Mastering Colour: How to Wear Bold Tones Without Looking Costumey</h2>
+          <p class="blog-card__excerpt">Colour theory doesn't have to be complicated. Here's how I approach dressing in vibrant hues — and the one rule I swear by.</p>
+          <a href="https://www.instagram.com/stitched_bysophia/" target="_blank" class="blog-card__cta">Read Full Post →</a>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="blog-more">
+      <p>New posts every week — follow along on Instagram for daily inspiration.</p>
+      <a href="https://www.instagram.com/stitched_bysophia/" target="_blank" class="btn btn--dark">@stitched_bysophia</a>
+    </div>
+
+  </main>
+
+  <!-- ============================= -->
+  <!-- PAGE: PORTFOLIO               -->
+  <!-- ============================= -->
+  <main id="page-portfolio" class="page">
+
+    <header class="page-header">
+      <div class="section-label">Selected Works</div>
+      <h1 class="page-header__title">Portfolio</h1>
+      <p class="page-header__sub">A selection of alteration projects, styling work &amp; creative direction.</p>
+    </header>
+
+    <div class="portfolio-grid">
+
+      <div class="portfolio-item portfolio-item--wide">
+        <div class="portfolio-item__img">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80&auto=format&fit=crop" alt="Portfolio"/>
+        </div>
+        <div class="portfolio-item__info">
+          <span class="portfolio-item__cat">Alterations</span>
+          <h3>Bridal Gown Restoration</h3>
+          <p>Full restoration and alteration of a vintage 1990s bridal gown — bustle added, bodice taken in, lace trim repaired.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item">
+        <div class="portfolio-item__img">
+          <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&q=80&auto=format&fit=crop" alt="Portfolio"/>
+        </div>
+        <div class="portfolio-item__info">
+          <span class="portfolio-item__cat">Styling</span>
+          <h3>Editorial Shoot: Spring '25</h3>
+          <p>Creative direction &amp; styling for local emerging brand lookbook.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item">
+        <div class="portfolio-item__img">
+          <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=800&q=80&auto=format&fit=crop" alt="Portfolio"/>
+        </div>
+        <div class="portfolio-item__info">
+          <span class="portfolio-item__cat">Hemming</span>
+          <h3>Denim Collection Re-Hem</h3>
+          <p>Raw hem alterations on a 12-piece denim collection for a DC boutique.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item">
+        <div class="portfolio-item__img">
+          <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=800&q=80&auto=format&fit=crop" alt="Portfolio"/>
+        </div>
+        <div class="portfolio-item__info">
+          <span class="portfolio-item__cat">Fashion Design</span>
+          <h3>Hand-Beaded Evening Cape</h3>
+          <p>Custom design &amp; construction of a hand-beaded evening wrap for a gala client.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item portfolio-item--wide">
+        <div class="portfolio-item__img">
+          <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=1200&q=80&auto=format&fit=crop" alt="Portfolio"/>
+        </div>
+        <div class="portfolio-item__info">
+          <span class="portfolio-item__cat">Wardrobe Styling</span>
+          <h3>Personal Styling: Seasonal Edit</h3>
+          <p>Full wardrobe audit and seasonal styling session — curated 40-piece working wardrobe for an executive client.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item">
+        <div class="portfolio-item__img">
+          <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=800&q=80&auto=format&fit=crop" alt="Portfolio"/>
+        </div>
+        <div class="portfolio-item__info">
+          <span class="portfolio-item__cat">Alterations</span>
+          <h3>Vintage Coat Restoration</h3>
+          <p>1960s bouclé coat — re-lined, buttons replaced, sleeves shortened.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="portfolio-cta">
+      <p>Interested in working together? See more behind-the-scenes on Instagram.</p>
+      <a href="https://www.instagram.com/stitched_bysophia/" target="_blank" class="btn btn--dark">View on Instagram →</a>
+    </div>
+
+  </main>
+
+  <!-- ============================= -->
+  <!-- PAGE: TEAM                    -->
+  <!-- ============================= -->
+  <main id="page-team" class="page">
+
+    <header class="page-header">
+      <div class="section-label">The People</div>
+      <h1 class="page-header__title">Meet the Team</h1>
+      <p class="page-header__sub">Small but mighty — the duo behind Stitched by Sophia.</p>
+    </header>
+
+    <div class="team-grid">
+
+      <div class="team-card team-card--founder">
+        <div class="team-card__img-wrap">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&q=80&auto=format&fit=crop" alt="Sophia" />
+          <div class="team-card__img-accent"></div>
+        </div>
+        <div class="team-card__body">
+          <span class="team-card__role">Founder &amp; Creative Director</span>
+          <h2 class="team-card__name">Sophia</h2>
+          <p>A lifelong lover of fashion and craft, Sophia started Stitched by Sophia from a small studio in Washington D.C., driven by a belief that great style begins with great fit. She trained in fashion design, writes about the industry with a discerning eye, and handles every alteration with the care of a couturier.</p>
+          <p>When she's not at the machine, you'll find her at a sample sale, deep in a vintage archive, or rewatching old Vogue runway footage.</p>
+          <div class="team-card__socials">
+            <a href="https://www.instagram.com/stitched_bysophia/" target="_blank" class="team-card__social">Instagram →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-card__img-wrap">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80&auto=format&fit=crop" alt="Marketing Manager" />
+          <div class="team-card__img-accent"></div>
+        </div>
+        <div class="team-card__body">
+          <span class="team-card__role">Marketing Manager</span>
+          <h2 class="team-card__name">Your Name</h2>
+          <p>Placeholder — add your marketing manager's bio here! She handles the strategy behind the brand: growing our audience, managing our social presence, and making sure the right people find Stitched by Sophia.</p>
+          <p>Passionate about storytelling, community building, and making beautiful things discoverable.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="team-quote">
+      <blockquote>"Fashion is the armour to survive the reality of everyday life."</blockquote>
+      <cite>— Bill Cunningham</cite>
+    </div>
+
+  </main>
+
+  <!-- ============================= -->
+  <!-- PAGE: BOOKING                 -->
+  <!-- ============================= -->
+  <main id="page-booking" class="page">
+
+    <header class="page-header">
+      <div class="section-label">Alterations &amp; Hemming</div>
+      <h1 class="page-header__title">Book a Service</h1>
+      <p class="page-header__sub">Let's make your clothes fit the way they were always meant to.</p>
+    </header>
+
+    <div class="booking-layout">
+
+      <div class="booking-services">
+        <h2>Services</h2>
+        <div class="booking-services__list">
+          <div class="booking-service">
+            <div class="booking-service__header">
+              <h3>Trouser &amp; Pants Hemming</h3>
+              <span class="booking-service__price">From $20</span>
+            </div>
+            <p>Clean, precision hemming for trousers, wide-leg pants, dress pants and more. Original hem recreation available.</p>
+          </div>
+          <div class="booking-service">
+            <div class="booking-service__header">
+              <h3>Jeans &amp; Denim Hemming</h3>
+              <span class="booking-service__price">From $25</span>
+            </div>
+            <p>Raw hem, clean chain-stitch, or original-look hem — we do it all. Stack length, cropped, or classic.</p>
+          </div>
+          <div class="booking-service">
+            <div class="booking-service__header">
+              <h3>Skirt &amp; Dress Hemming</h3>
+              <span class="booking-service__price">From $25</span>
+            </div>
+            <p>Mini, midi, maxi, or asymmetrical. Circle skirts, chiffon, satin — handled with care.</p>
+          </div>
+          <div class="booking-service">
+            <div class="booking-service__header">
+              <h3>Taking In / Letting Out</h3>
+              <span class="booking-service__price">From $30</span>
+            </div>
+            <p>Side seams, waistbands, and more — for that perfectly tailored silhouette.</p>
+          </div>
+          <div class="booking-service">
+            <div class="booking-service__header">
+              <h3>General Alterations</h3>
+              <span class="booking-service__price">Quote on request</span>
+            </div>
+            <p>Have something more complex in mind? Reach out and we'll discuss.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="booking-form-wrap">
+        <h2>Request a Booking</h2>
+        <p class="booking-note">Fill out the form below and Sophia will be in touch within 48 hours to confirm your appointment.</p>
+        <div class="booking-form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Jane Smith" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="jane@example.com" />
+          </div>
+          <div class="form-group">
+            <label for="service">Service Needed</label>
+            <select id="service">
+              <option value="">Select a service…</option>
+              <option>Trouser &amp; Pants Hemming</option>
+              <option>Jeans &amp; Denim Hemming</option>
+              <option>Skirt &amp; Dress Hemming</option>
+              <option>Taking In / Letting Out</option>
+              <option>General Alterations</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="items">Describe Your Items</label>
+            <textarea id="items" rows="4" placeholder="E.g. 2 pairs of black trousers, 1 pair of Levi's 501s…"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="message">Anything else we should know?</label>
+            <textarea id="message" rows="3" placeholder="Timeline, special requests, questions…"></textarea>
+          </div>
+          <button class="btn btn--dark btn--full" onclick="submitBooking()">Send Request</button>
+          <div id="booking-success" class="booking-success" style="display:none">
+            <p>✦ Thank you! Sophia will be in touch within 48 hours.</p>
+          </div>
+        </div>
+        <div class="booking-insta">
+          <p>You can also reach out directly via Instagram DM:</p>
+          <a href="https://www.instagram.com/stitched_bysophia/" target="_blank" class="btn btn--outline-dark">@stitched_bysophia →</a>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <div class="footer__logo">Stitched <em>by</em> Sophia</div>
+        <p>Fashion musings, runway reports, styling tips &amp; bespoke alterations — from Washington D.C.</p>
+        <a href="https://www.instagram.com/stitched_bysophia/" target="_blank" class="footer__ig">@stitched_bysophia</a>
+      </div>
+      <div class="footer__nav">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="#" onclick="showPage('home')">Home</a></li>
+          <li><a href="#" onclick="showPage('blog')">Journal</a></li>
+          <li><a href="#" onclick="showPage('portfolio')">Portfolio</a></li>
+          <li><a href="#" onclick="showPage('team')">The Team</a></li>
+          <li><a href="#" onclick="showPage('booking')">Book Now</a></li>
+        </ul>
+      </div>
+      <div class="footer__services">
+        <h4>Services</h4>
+        <ul>
+          <li>Trouser Hemming</li>
+          <li>Denim Hemming</li>
+          <li>Skirt &amp; Dress Hemming</li>
+          <li>Taking In / Letting Out</li>
+          <li>General Alterations</li>
+        </ul>
+      </div>
+      <div class="footer__shop">
+        <h4>Shop</h4>
+        <p>All products are sold exclusively through Instagram. Visit the link below to shop current edits.</p>
+        <a href="https://www.instagram.com/stitched_bysophia/" target="_blank" class="btn btn--outline-light">Shop on Instagram →</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2025 Stitched by Sophia. All rights reserved.</p>
+      <p>Washington, D.C.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
