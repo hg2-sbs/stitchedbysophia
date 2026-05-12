@@ -138,6 +138,7 @@ h1, h2, h3, h4 { font-family: var(--ff-display); line-height: 1.15; }
   align-items: center;
   justify-content: space-between;
   gap: 24px;
+position: relative;
 }
 
 .nav__links {
@@ -164,6 +165,9 @@ h1, h2, h3, h4 { font-family: var(--ff-display); line-height: 1.15; }
   text-align: center;
   white-space: nowrap;
   flex-shrink: 0;
+   position: absolute;
+left: 50%;
+transform: translateX(-50%);
 }
 .nav__logo-main {
   display: block;
