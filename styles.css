@@ -165,10 +165,11 @@ position: relative;
   text-align: center;
   white-space: nowrap;
   flex-shrink: 0;
-   position: absolute;
-left: 50%;
-top: 50%;
-transform: translate(-50%, -50%);
+  position: fixed;
+  left: 50vw;
+  top: 36px;
+  transform: translateX(-50%);
+  z-index: 200;
 }
 .nav__logo-main {
   display: block;
