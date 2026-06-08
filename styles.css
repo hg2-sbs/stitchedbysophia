@@ -126,6 +126,8 @@ h1, h2, h3, h4 { font-family: var(--ff-display); line-height: 1.15; }
   border-bottom: 1px solid var(--parchment);
   height: var(--nav-h);
   transition: box-shadow 0.3s;
+ min-height: 95px;
+  align-items: center;
 }
 .nav.scrolled { box-shadow: 0 4px 30px rgba(0,0,0,0.07); }
 
@@ -183,7 +185,7 @@ position: relative;
 .nav__logo-by {
   font-family: var(--ff-display);
   font-style: italic;
-  font-size: 10px;
+  font-size: 14px;
   color: var(--warm-gray);
 }
 .nav__logo-name {
