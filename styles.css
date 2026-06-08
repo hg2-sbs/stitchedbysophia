@@ -183,12 +183,12 @@ position: relative;
 .nav__logo-by {
   font-family: var(--ff-display);
   font-style: italic;
-  font-size: 13px;
+  font-size: 10px;
   color: var(--warm-gray);
 }
 .nav__logo-name {
   font-family: var(--ff-display);
-  font-size: 14px;
+  font-size: 12px;
   color: var(--charcoal);
   letter-spacing: 0.1em;
 }
