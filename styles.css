@@ -125,8 +125,6 @@ h1, h2, h3, h4 { font-family: var(--ff-display); line-height: 1.15; }
   background: var(--ivory);
   border-bottom: 1px solid var(--parchment);
   height: var(--nav-h);
-  transition: box-shadow 0.3s;
- min-height: 95px;
   align-items: center;
 }
 .nav.scrolled { box-shadow: 0 4px 30px rgba(0,0,0,0.07); }
