@@ -167,7 +167,7 @@ position: relative;
   flex-shrink: 0;
   position: fixed;
   left: 50vw;
-  top: 18px;
+  top: 8px;
   transform: translateX(-50%);
   z-index: 200;
 }
@@ -178,7 +178,7 @@ position: relative;
   font-weight: 400;
   letter-spacing: 0.05em;
   color: var(--black);
-  line-height: 1;
+  line-height: 0.9;
 }
 .nav__logo-by {
   font-family: var(--ff-display);
