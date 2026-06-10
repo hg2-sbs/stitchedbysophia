@@ -174,7 +174,7 @@ position: relative;
 .nav__logo-main {
   display: block;
   font-family: var(--ff-display);
-  font-size: 22px;
+  font-size: 26px;
   font-weight: 400;
   letter-spacing: 0.05em;
   color: var(--black);
